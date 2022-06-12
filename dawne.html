@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="geoinformatyka, kartografia, gis, układ współrzędnych, mapy topograficzne, epsg">
+		<meta name="author" content="Domi" >
+		<title>Polskie układy współrzędnych oraz mapy topograficzne | Dawne układy</title>
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		<link href='http://fonts.googleapis.com/css?family=Abril+Fatface&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="lista">
+					<li><a href="index.html">Strona główna</a></li>
+					<li><a href="dawne.html">Dawne układy</a></li>
+					<li><a href="nowe.html">Nowe układy</a></li>
+					<li><a href="mapy_topo.html">Polskie mapy topograficzne</a></li>
+					<li><a href="zrodla.html">Źródła</a></li>
+					<li><a href="o_autorze.html">O autorze</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="kolejna_strona">
+				<h1 id="kolejna_strona_naglowek">Dawne układy współrzędnych</h1>
+		</div>
+
+		<section>
+		<h2>Zarys historyczny</h2>
+			<p>Po II wojnie światowej Polska znalazła się w radzieckiej strefie wpływów. Korzystanie z radzieckich rozwiązań miało miejsce niemal w każdej dziedzinie, w większym lub mniejszym stopniu.
+				Kartografia nie była tu wyjątkiem - od organizacji służby kartograficznej i topograficznej, poprzez wszechobecną manię cenzury i tajności, po zwykłe mapy przeznaczone do użytku cywilnego.</p>
+			<p>Kartografia topograficzna, silnie związana z działalnością wojska, w realiach PRL-u definiowana była przez wytyczne obowiązujące w ramach łączącego kraje wschodniego bloku
+				Układu Warszawskiego, powstałego w 1955 r.</p>
+		</section>
+
+		<section>
+			<h2>Układ współrzędnych "1942"</h2>
+			<p>Mapy na potrzeby Układu Warszawskiego wykonywane były w układzie "1942", w układzie współrzędnych płaskich prostokątnych obowiązującym w ZSRR od 1942 r. (stąd nazwa układu), a wprowadzonym
+				w Polsce w roku 1953 i obowiązującym jeszcze do początku lat 90. XX wieku głównie do opracowywania map topograficznych dla celów obronnych.
+				W kartografii cywilnej PRL wcześniej zastąpił go układ "1965".</p>
+			<h3>Charakterystyka układu</h3>
+			<ul>
+				<li>odwzorowanie Gaussa-Krügera w dwóch wariantach:
+				<ul>
+					<li>cztery strefy odwzorowawcze z pasami południkowymi o szerokości 3° z południkami środkowymi: 15°, 18°, 21° i 24° - odwzorowanie wykorzystywano dla map wielkoskalowych (o skalach 1:5 000 i większych),</li>
+					<li>dwie strefy odwzorowawcze z pasami południkowymi o szerokości 6° z południkami środkowymi 15° i 21° - odwzorowanie stosowano dla map średnio- i małoskalowych (o skalach mniejszych niż 1:5 000),</li>
+				</ul>
+				</li>
+				<li>elipsoida Krasowskiego (1940 r.),</li>
+				<li>punkt przyłożenia: Pułkowo (k. Petersburga),</li>
+				<li>zastosowanie: mapy cywilne i wojskowe,</li>
+				<li>numer strefy powstaje poprzez podzielenie południka środkowego przez 3 lub 6 w zależności od wariantu odwzorowania.</li>
+			</ul>
+			<p class="with_image"><img src="https://gisplay.pl/images/stories/Kartografia/uklad42.gif" alt="układ 1942"><br><small>Ryc.1. Podział na strefy w układzie "1942" w zależności od wariantu: po lewej pasy południkowe o szerokości 6°, po prawej 3°</small></p>
+			<table>
+				<caption>Kody EPSG identyfikujące układ w systemach GIS</caption>
+				<tr>
+					<th colspan="2">układ "1942" wariant 6° </th>
+					<th colspan="2">układ "1942" wariant 3° </th>
+				</tr>
+				<tr>
+					<th>STREFA</th>
+					<th>KOD EPSG</th>
+					<th>STREFA</th>
+					<th>KOD EPSG</th>
+				</tr>
+				<tr>
+					<td>3 (południk środkowy 15°E)</td>
+					<td>3333</td>
+					<td>5 (południk środkowy 15°E)</td>
+					<td>3329</td>
+				</tr>
+				<tr>
+					<td>4 (południk środkowy 21°E)</td>
+					<td>3334</td>
+					<td>6 (południk środkowy 18°E)</td>
+					<td>3330</td>
+				</tr>
+				<tr>
+					<td colspan="2">-</td>
+					<td>7 (południk środkowy 21°E)</td>
+					<td>3331</td>
+				</tr>
+				<tr>
+					<td colspan="2">-</td>
+					<td>8 (południk środkowy 24°E)</td>
+					<td>3332</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>Układ współrzędnych "1965"</h2>
+			<p>Po początkowym okresie względnej dostępności szczegółowych map i obecności na rynku opracowań o bogatej treści topograficznej, od lat 50. XX wieku rozpoczyna się okres,
+			istnienia którego skutki odczuwalne są do dziś. Mapy były niedostępne dla zwykłych obywateli, praktycznie niedostępne także do celów gospodarczych - dysponowało nim jedynie wojsko.
+			Zmusiło to do korzystania z map przedwojennych (tzw. "WIG-ówek"), ale to również ograniczało kontakt społeczeństwa z mapą, co pociągało ze sobą niski poziom kartograficznych umiejętności, a także - wraz z pojawieniem się ocenzurowanych opracowań -
+			obniżało zauwanie do map.</p>
+			<p>Rozwiązaniem miało być wprowadzenie map do użytku cywilnego, tzw. "obrębówek", jednak w praktyce pogorszyły one sytuację. Coraz większa potrzeba posiadania mapy informującej o aktualnym stanie przestrzeni kraju i
+			dostępnej dla użytkowników niezwiązanych z wojskiem spowodowała wprowadzenie układu "1965".</p>
+			<h3>Charakterystyka układu</h3>
+			<ul>
+				<li>układ wprowadzono w roku 1968,</li>
+				<li>elipsoida Krasowskiego (1940 r.),</li>
+				<li>cel: wykorzystanie na potrzeby mapy zasadniczej oraz map topograficznych w skalach: 1:10 000, 1:25 000, 1:50 000,</li>
+				<li>opracowanie nie było jednolite dla całego kraju - Polska została podzielona na 5 niezależnych stref:
+				<ul>
+					<li>dla stref 1, 2, 3 i 4, obejmujących odpowiednio – południowo-wschodnią część Polski, część północno-wschodnią, część północno-zachodnią oraz część południowo-zachodnią - odwzorowanie: quasi-stereograficzne (Roussilhe'a),</li>
+					<li>dla strefy 5, obejmującej Górny Śląsk - odwzorowanie: Gaussa-Krügera z 3-stopniowym pasem odwzorowawczym - południk osiowy: 16°40'20",</li>
+				</ul>
+				<li>każda z 5 stref odwzorowawczych ma własny początek układu współrzędnych.</li>
+			</ul>
+			<p class="with_image"><img src="http://www.asgeupos.pl/webpg/graph/img/_tech_rf/u1965_01.png" alt="układ 1965"><br><small>Ryc. 2. Podział na strefy w układzie "1965"</small></p>
+			<p class="epsg">Kody EPSG identyfikujące układ w systemach GIS</p>
+			<table>
+				<tr>
+					<th>STREFA</th>
+					<th>KOD EPSG</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>3120</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>2172</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>2173</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>2174</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>2175</td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>Układ współrzędnych "GUGiK-80"</h2>
+			<p>W dalszym ciągu funkcjonowały mapy topograficzne oraz zasadnicze w układzie "1965". Aby wykonać opracowania bliższe mapom przeglądowym, czyli mapy z zakresu 1:100 000 - 1:200 000 i mniejsze, przygotowano osobny, jednostrefowy układ nazwany "GUGiK 1980".</p>
+			<h3>Charakterystyka układu</h3>
+			<ul>
+				<li>odwzorowanie quasi-stereograficzne (Roussilhe'a),</li>
+				<li>elipsoida Krasowskiego (1940 r.),</li>
+				<li>punkt przyłożenia: przybliżony środek kraju,</li>
+				<li>zastosowanie: mapy cywilne,</li>
+				<li>z przyjętych założeń i skali wynikały bardzo duże zniekształcenia, sięgające w południowo-wschodniej Polsce ok. 90cm/km.</li>
+			</ul>
+			<p class="with_image"><img src="https://docplayer.pl/docs-images/62/47673764/images/2-1.jpg" alt="GUGiK-80"><br><small>Ryc. 3. Jedna strefa układu "GUGiK-80"</small></p>
+			<p class="epsg">Kod EPSG identyfikujący układ w systemach GIS</p>
+			<table>
+				<tr>
+					<th>KOD EPSG</th>
+				</tr>
+				<tr>
+					<td>3328</td>
+				</tr>
+			</table>
+		</section>
+
+		<footer>
+			<div id="gora">
+				<a href="dawne.html">do góry</a>
+			</div>
+			<p id="przedmiot"> Strona została przygotowana na zaliczenie przedmiotu "Tworzenie stron internetowych w języku HTML i CSS" <br>
+			w ramach studiów stacjonarnych inżynierskich na kierunku Geoinformatyka. <br>
+			<br>
+			Copyright &copy; Dominika Binięda, 2021</p>
+		</footer>
+	</body>
+</html>
