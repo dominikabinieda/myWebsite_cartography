@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body{
+	background-color: white;
+	background-image: url(https://images4.alphacoders.com/102/102976.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Century Gothic";
+	text-align: justify;
+	margin: 0px;
+}
+header, footer{
+	height: 72px;
+	background-color: white;	
+}
+nav{
+	width: 1000px;
+	height: 50px;
+	text-align: right;
+	float: right;
+	padding-right: 100px;
+}
+
+#strona_glowna{
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 1000px;
+	height: 200px;
+	font-size: 36px;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 100px;
+	margin-left: 0px;
+	display: table;
+}
+#strona_glowna_naglowek{
+	font-family: "Abril Fatface", sans-serif;
+	display: table-cell;
+	color: #A0522D;
+	vertical-align: middle;
+}
+
+#kolejna_strona{
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 500px;
+	height: 180px;
+	font-size: 26px;
+	text-align: center;
+	vertical-align: middle;	
+	margin-top: 80px;
+	margin-left: 0px;
+	display: table;
+}
+#kolejna_strona_naglowek{
+	font-family: "Abril Fatface", sans-serif;
+	color: #A0522D;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Abril Fatface", sans-serif;
+	color: #A0522D;
+}
+section{
+	background-color: rgba(255, 255, 255, 0.9);
+	margin: 60px 120px;
+	padding: 25px 35px;
+}
+
+footer{
+	margin-bottom: 20px;
+	padding: 0px 15px;
+	font-size: 14px;
+	height: 120px;
+}
+
+ul.lista li{
+	font-size: 16px;
+	padding: 27px 15px;
+	line-height: 35px;
+	display: inline;
+}
+
+a:link, a:visited{
+	color: #CD853F;
+	text-decoration: none;
+}
+
+ul.lista li:hover{
+	background-color: #CD853F;
+}
+
+ul.lista a:hover{
+	color: white;
+}
+
+p.with_image{
+	text-align: center;
+}
+
+table{
+	border: 3px solid black;
+	border-color: #A0522D;
+	border-collapse: separate;
+	margin: 0px auto;
+	text-align: center;	
+}
+th, td{
+	border: 2px solid #A0522D;
+	padding: 5px;
+}
+
+p.epsg{
+	text-align: center;
+}
+
+#przedmiot{
+	width: 100%;
+	padding-top: 0px;
+	text-align: center;
+	float: left;
+}
+#gora{
+	width: 70px;
+	padding-top: 5px;
+	float: right;
+}
